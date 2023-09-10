@@ -1,0 +1,151 @@
+.hamburger {
+    display: none;
+}
+
+@media(max-width:1200px) {
+    .container {
+        width: 900px;
+
+    }
+}
+
+@media(max-width:992px) {
+    .container {
+        width: 700px;
+    }
+
+    .promo {
+        height: 670px;
+    }
+
+    .promo h1 {
+        font-size: 80px;
+    }
+
+    .cotalog_grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .cotalog_item {
+        width: 100%;
+    }
+}
+
+@media(max-width:768px) {
+    .container {
+        width: 500px;
+    }
+
+    .promo h1 {
+        font-size: 55px;
+    }
+
+    .menu {
+       position: fixed;
+       left: -100%;
+       top: 0;
+       bottom: 0;
+       background-color: rgba(0, 0, 0, 0.521);
+       flex-direction: column;
+       padding: 30px;
+       backdrop-filter: blur(15px);
+       transition: 300ms ease-in;
+
+    }
+
+    .menu.open{
+        left: 0;
+    }
+
+    .hamburger {
+        display: flex;
+        background: none;
+        border: none;
+    }
+
+    .cotalog_grid {
+        grid-template-columns: 1fr;
+    }
+
+    .galery_grid {
+        grid-template: 186px 194px 260px / repeat(2, 1fr);
+    }
+
+    .galery_grid img:nth-child(1n) {
+        grid-column: auto;
+        grid-row: auto;
+    }
+
+    .galery_grid img:nth-child(1) {
+        grid-column: 1;
+        grid-row: 1 / 3;
+    }
+
+    .galery_grid img:nth-child(4) {
+        grid-column: 1 /3;
+    }
+
+    .galery_grid img:nth-child(1n+5) {
+        display: none;
+    }
+
+}
+
+@media(max-width:576px) {
+    .container {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .promo {
+        height: 576px;
+    }
+
+    .promo h1 {
+        font-size: 36px;
+    }
+
+    .catalog_head a {
+        display: none;
+    }
+
+    .about {
+        width: 100%;
+        padding: 43px;
+        font-size: 12px;
+    }
+
+    .elem {
+        width: 100%;
+    }
+
+    .top p {
+        padding: 0 20px;
+    }
+
+    h4 {
+        font-size: 15px;
+        padding: 35px 43px 43px;
+    }
+
+    .item_img {
+        display: none;
+    }
+
+    .item {
+        margin-top: 10px;
+    }
+
+    .box {
+        font-size: 12px;
+    }
+
+    .tour_desc {
+        margin: 0;
+    }
+
+
+
+
+}

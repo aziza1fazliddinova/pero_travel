@@ -112,6 +112,7 @@ img {
 
 .cotalog_item p {
     margin-bottom: 20px;
+    font-size: 12px;
 }
 
 
@@ -133,6 +134,7 @@ img {
     justify-content: center;
     align-items: center;
     padding-top: 136px;
+   
 }
 
 .elem {
