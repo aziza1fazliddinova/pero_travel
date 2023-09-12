@@ -228,3 +228,13 @@ h5 {
     grid-column: 4/6;
     grid-row: 2/ 4;
 }
+
+button:hover{
+    background: var(--blue-grad, linear-gradient(135deg, #dd0404 0%, #fd49b8 100%));;
+    transform: scale(1.05);
+    
+}
+
+button{
+    transition: 200ms  ease-in-out;
+}
