@@ -60,8 +60,9 @@
 
     .hamburger {
         display: flex;
-        background: none;
+        background: none!important;
         border: none;
+
     }
 
     .cotalog_grid {
